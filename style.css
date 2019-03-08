@@ -1,0 +1,13 @@
+.chat-sticky-cont {
+    background-color: rgba(15, 14, 17, 0.78);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.ffz-mentioned .close {
+    cursor: pointer;
+    float: right;
+    position: relative;
+    right: -3%;
+    text-shadow: 1px 2px black;
+}
