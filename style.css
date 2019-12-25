@@ -3,11 +3,25 @@
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 .ffz-mentioned .close {
     cursor: pointer;
     float: right;
     position: relative;
-    right: -3%;
+    right: 0;
     text-shadow: 1px 2px black;
+}
+button.cbutton {
+    color: #353535;
+    background-color: #1d1d1d;
+    padding: 5px;
+    border-radius: 2px 5px;
+    margin: 0 2px;
+    min-width: 35px;
+    text-align: center;
+    vertical-align: middle;
+}
+#chat-room-header-label > p {
+    display: inline;
 }
