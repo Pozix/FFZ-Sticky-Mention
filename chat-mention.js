@@ -4,13 +4,13 @@ var highlightUsers = [];
 
 var stickyCont = document.createElement('div');
 stickyCont.classList = 'chat-sticky-cont';
-var chat = document.querySelector('div.chat-list__lines div[role=log]');
+var chat = document.querySelector('section.chat-room div[role=log]');
 var type = 'live';
 
 var init = function() {
     console.log("In init");
     if (chat === null) {
-        chat = document.querySelector('div.chat-list__lines div[role=log]');
+        chat = document.querySelector('section.chat-room div[role=log]');
         type = 'live';
     }
     if (chat === null) {
@@ -89,7 +89,7 @@ var cstop = function() {
 
 var header = document.querySelector('.video-chat__header');
 var buttons = ['init', 'cstart', 'cstop'];
-header === null ? header = document.querySelector('.rooms-header') : false;
+header === null ? header = document.querySelector('.stream-chat-header') : false;
 if (header) {
     for (var i = 0; i < buttons.length; i++) {
         var btn = document.createElement('button');
